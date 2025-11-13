@@ -2,26 +2,7 @@
 
 This project implements a context-aware sarcasm detection system using a fine-tuned BERT (Bidirectional Encoder Representations from Transformers) model. The goal is to accurately classify a comment as either "Offensive" (sarcastic) or "Non-Offensive" (genuine) by understanding its surrounding context.
 
-## 🚀 Project Overview
-
-Sarcasm detection is a challenging task in Natural Language Processing (NLP) because the literal meaning of words often contradicts the intended meaning. Traditional sentiment analysis struggles with this, as it typically evaluates text in isolation. Our approach addresses this by leveraging the powerful contextual understanding capabilities of a Transformer model.
-
-The model takes both a user's comment and its relevant context as input. By presenting these two pieces of text together, separated by a special `[SEP]` token, BERT learns to identify semantic inconsistencies or ironic contrasts that signal sarcasm.
-
-## ✨ Features
-
--   **Context-Aware Analysis:** Processes both comment and context for nuanced understanding.
--   **BERT-based Model:** Utilizes a fine-tuned `bert-base-uncased` model for state-of-the-art language representation.
--   **High Accuracy:** Achieves excellent performance on the validation set, demonstrating robust sarcasm detection.
--   **Interactive Inference Script:** A Python script to easily test the trained model with new comment-context pairs.
--   **Detailed Report:** A comprehensive LaTeX report detailing methodology, results, and analysis.
-
-## 📁 Repository Structure
-
-. ├── apr_proj.ipynb # Jupyter Notebook for data loading, training, and evaluation ├── context_dependent_comments_dataset_5000.csv # The dataset used for training ├── predict.py # Python script for interactive model inference ├── README.md # This README file ├── sarcasm_bert_model/ # Directory where the trained BERT model and tokenizer are saved (ignored by Git) ├── class_distribution.png # Plot of class distribution in the dataset ├── model_loss_curve.png # Plot of training and validation loss over epochs ├── confusion_matrix.png # Confusion matrix illustrating model performance └── apr_project_report.pdf # (Optional) Compiled LaTeX report
-
-
-## 📋 Authors
+##  Authors
 
 This project was developed by the following team members:
 
@@ -38,7 +19,28 @@ This project was developed by the following team members:
 * (2201CS54, Prakhar Shukla)
 * (2201CS94, Anirudh D Bhat)
 
-## 🛠️ Setup and Installation
+
+##  Project Overview
+
+Sarcasm detection is a challenging task in Natural Language Processing (NLP) because the literal meaning of words often contradicts the intended meaning. Traditional sentiment analysis struggles with this, as it typically evaluates text in isolation. Our approach addresses this by leveraging the powerful contextual understanding capabilities of a Transformer model.
+
+The model takes both a user's comment and its relevant context as input. By presenting these two pieces of text together, separated by a special `[SEP]` token, BERT learns to identify semantic inconsistencies or ironic contrasts that signal sarcasm.
+
+##  Features
+
+-   **Context-Aware Analysis:** Processes both comment and context for nuanced understanding.
+-   **BERT-based Model:** Utilizes a fine-tuned `bert-base-uncased` model for state-of-the-art language representation.
+-   **High Accuracy:** Achieves excellent performance on the validation set, demonstrating robust sarcasm detection.
+-   **Interactive Inference Script:** A Python script to easily test the trained model with new comment-context pairs.
+-   **Detailed Report:** A comprehensive LaTeX report detailing methodology, results, and analysis.
+
+##  Repository Structure
+
+. ├── apr_proj.ipynb # Jupyter Notebook for data loading, training, and evaluation ├── context_dependent_comments_dataset_5000.csv # The dataset used for training ├── predict.py # Python script for interactive model inference ├── README.md # This README file ├── sarcasm_bert_model/ # Directory where the trained BERT model and tokenizer are saved (ignored by Git) ├── class_distribution.png # Plot of class distribution in the dataset ├── model_loss_curve.png # Plot of training and validation loss over epochs ├── confusion_matrix.png # Confusion matrix illustrating model performance └── apr_project_report.pdf # (Optional) Compiled LaTeX report
+
+
+
+##  Setup and Installation
 
 1.  **Clone the Repository:**
     ```bash
@@ -109,7 +111,7 @@ After running the notebook and saving the model, you can use `predict.py` to int
     --- Model Prediction: Non-Offensive (Genuine) ---
     ```
 
-## 📈 Results
+##  Results
 
 The fine-tuned BERT model achieved outstanding performance on the validation set:
 
@@ -120,6 +122,7 @@ The fine-tuned BERT model achieved outstanding performance on the validation set
 
 These results indicate that the model effectively learned to distinguish sarcasm from genuine statements based on the provided context within the training data.
 
-## 📄 Report
+##  Report
+
 
 A detailed project report, `apr_project_report.pdf`, (if compiled from the provided LaTeX source) contains a comprehensive explanatio
